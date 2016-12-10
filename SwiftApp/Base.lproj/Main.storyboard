@@ -38,17 +38,41 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pvl-em-vAe">
+                                <rect key="frame" x="139" y="110" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="heA-cM-PIr"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f7X-sk-o8L">
+                                <rect key="frame" x="139" y="145" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="qZ6-K8-FS4"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="pBf-yd-Aer" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FDH-fn-Vwq"/>
                             <constraint firstItem="zT9-gw-82H" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="KbN-7K-aHG"/>
                             <constraint firstItem="pBf-yd-Aer" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RK1-Vo-QOl"/>
+                            <constraint firstItem="Pvl-em-vAe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wcs-bd-iU5"/>
+                            <constraint firstItem="f7X-sk-o8L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b3E-N6-ns3"/>
+                            <constraint firstItem="Pvl-em-vAe" firstAttribute="top" secondItem="pBf-yd-Aer" secondAttribute="bottom" constant="9" id="bmg-v6-OFc"/>
+                            <constraint firstItem="f7X-sk-o8L" firstAttribute="top" secondItem="Pvl-em-vAe" secondAttribute="bottom" constant="5" id="emg-Pf-H3p"/>
                             <constraint firstItem="zT9-gw-82H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pOZ-b6-aNh"/>
                             <constraint firstItem="pBf-yd-Aer" firstAttribute="top" secondItem="zT9-gw-82H" secondAttribute="bottom" constant="20" id="zSF-sT-oKS"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="text1" destination="Pvl-em-vAe" id="Cgb-aN-FH0"/>
+                        <outlet property="text2" destination="f7X-sk-o8L" id="fIK-Nc-JTZ"/>
                         <outlet property="theLabel" destination="zT9-gw-82H" id="wAj-qu-cLt"/>
                     </connections>
                 </viewController>
